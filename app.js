@@ -5,4 +5,5 @@ const spanishDb = require('./modules/spanish');
 let spanish = new spanishDb();
 
 //Analizo una oración desde archivo.
+spanish.analyseTextArray('Maria corre');
 spanish.analyseTextFile('texto.txt')
