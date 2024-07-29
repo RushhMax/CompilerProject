@@ -165,7 +165,7 @@ module.exports = class SpanishDb {
             return cadena.toUpperCase(); // Convierte la cadena a mayúsculas
         };
 
-        return items.includes(cleanStr(word)); // Verifica si la palabra limpia está en la lista
+        return (items[cleanStr(word)] != null);
     }
 
     // Analiza un texto y determina el tipo de cada palabra
